@@ -9,10 +9,10 @@ const checker = {
         'ip': checkIP,
         'mac': checkMac
     },
-    validate: (text, type) => {
+    validate(text, type) {
         return this.rules[type](text);
     }
-}
+};
 
 
 export default checker;
