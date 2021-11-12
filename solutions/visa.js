@@ -1,6 +1,6 @@
 const checkVisa = cardNumber => {
     const cardNumberRegex = /^4\d{15}$/;
-    return cardNumber.match(cardNumberRegex) ? true : false;
+    return cardNumberRegex.test(cardNumber);
 }
 
 export default checkVisa;
